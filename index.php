@@ -87,7 +87,7 @@ echo "<b>Сайт радио:</b> {$url}<br \>";
 echo "<b>Сайт радио:</b> Нет потока<br \>";
 }
 
-if (preg_match('#<td>Current Listeners:</td><td class=\"streamdata\">([\d]*)<\/td>#Ui',$fl,$m)) {
+if (preg_match('#<td>Current Listeners:</td><td class="streamdata">([d]*)</td>#Ui',$fl,$m)) {
 $listeners = $m[1];
 echo "<b>Cлушателей:</b> {$listeners}<br \>";
 } else {
